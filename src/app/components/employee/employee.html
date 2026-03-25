@@ -1,0 +1,23 @@
+
+<button (click)="loadEmployees()">Load Employees</button>
+<table  border="1" *ngFor="let e of employees; let i= index">
+<thead>
+<tr >
+<th>Name</th>
+<th>Department</th>
+<th>Salary</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>{{e.name}}</td>
+    <td>{{e.department}}</td>
+    <td>{{e.salary}}</td>
+    <td><button (click)="deleteEmployee(i)">Delete</button></td>
+    
+    </tr>
+</tbody>
+</table>
+
+

@@ -1,0 +1,25 @@
+
+<div class="layout">
+
+<div class="navbar">
+        <h2>EMS Dashboard</h2>
+    <div>
+        <span>Welcome {{username}}</span> <br>
+        <button (click)="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="body">
+
+<a [routerLink]="['/employees']">Employees</a>
+<a [routerLink]="['/add-employee']">Add Employees</a>
+
+
+<div class="content">
+<router-outlet></router-outlet>
+</div>
+
+</div>
+</div>
+
+

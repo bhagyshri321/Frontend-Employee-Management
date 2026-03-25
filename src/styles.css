@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Add this in style.css */
+.login-page, .register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f7fa;
+}
+
+.login-page .form-container,
+.register-page .form-container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-page input,
+.register-page input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-page button,
+.register-page button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+
+.layout {
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #1976d2;
+  color: white;
+  padding: 15px;
+}
+
+.body {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar p {
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #f4f6f9;
+}

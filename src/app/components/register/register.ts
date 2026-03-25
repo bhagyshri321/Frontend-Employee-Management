@@ -26,19 +26,19 @@ export class Register {
       const user= {
       name:this.name,
         password:this.password
-      }
+      };
   
-      this.authService.register(this.name,this.password).subscribe(
-        ()=>{
+      this.authService.register(user).subscribe({
+       next: ()=>{
      alert("Registration Successful");
   
       this.router.navigate(['/login']);
-        });
-       { error:()=>{
+        },
+        error:()=>{
         alert("Registrtion Failed")
         }
 
-      }
+      });
   
     } 
     
